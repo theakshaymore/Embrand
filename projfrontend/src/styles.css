@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn,
+.jumbotron,
+.nav :hover {
+  border-radius: 0px;
+}
+
+body {
+  /* background: #f9fafb; */
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  /* font-family: "Inter", sans-serif; */
+}
+
+/* Default Components */
+.my-login-btn {
+  background-color: #e81a30;
+  color: white;
+  transition: 0.4s;
+}
+.my-btn {
+  /* background-color: #e53e3e; */
+  background-color: #e81a30;
+  color: white;
+  transform: scale(1);
+  transition: 0.4s;
+}
+.my-btn:hover {
+  background-color: #822727;
+  color: white;
+  transform: scale(1) translateY(-15px);
+}
+.my-btnn {
+  background-color: #e81a30;
+  color: white;
+}
+.my-text {
+  /* color: #e81a30; */
+  color: #b033fa;
+}
+.my-text2 {
+  color: #e81a30;
+}
+.my-btn2 {
+  background-color: #e81a30;
+  color: white;
+}
+.my-btn2:hover {
+  background-color: #b033fa;
+}
+.my-btn3 {
+  background-color: #b033fa;
+  color: white;
+}
+.my-btn3:hover {
+  background-color: #5d0092;
+  color: white;
+}
+
+/* Home */
+.wrapper {
+  margin-bottom: 40px;
+}
+
+/* Navbar */
+.nav-btn {
+  background-color: #e81a30;
+  border: none;
+  border-radius: 5px;
+}
+.nav-btn:hover {
+  border-radius: 5px;
+  background-color: #b033fa;
+  border: none;
+}
+.nav-brandname {
+  color: #e81a30 !important;
+  font-size: 25px;
+  font-weight: 500;
+}
+.nav-slogan {
+  font-size: 12px;
+  color: black;
+}
+
+/* Jumbotron */
+.my-jumbo {
+  background-color: #fff5f5;
+}
+
+/* Banner */
+.my-banner {
+  /* background-image: url("https://images.pexels.com/photos/7319028/pexels-photo-7319028.jpeg?auto=compress"); */
+  /* background-image: url("https://images.pexels.com/photos/7319299/pexels-photo-7319299.jpeg?auto=compress"); */
+  /* background-image: url("https://images.pexels.com/photos/1998243/pexels-photo-1998243.jpeg"); */
+  /* https://www.pexels.com/photo/photo-of-woman-leaning-on-wall-3062595/ */
+  background-image: url(imgs/intro-4-min.jpg);
+  background-size: cover;
+  height: 550px;
+  width: 100%;
+  border: none;
+}
+
+.banner-text {
+  color: white;
+}
+
+@media all and (max-width: 768px) {
+  .my-banner {
+    /* background-image: url("https://images.pexels.com/photos/7319039/pexels-photo-7319039.jpeg?auto=compress"); */
+    /* background-image: url("https://images.pexels.com/photos/7319288/pexels-photo-7319288.jpeg?auto=compress"); */
+    background-image: url(imgs/intro-4-mob-min.jpg);
+    background-size: cover;
+    color: white;
+    padding: 100px 0px;
+    /* color: white; */
+    font-weight: bold;
+  }
+}
+
+.banner-text {
+  padding-top: 220px;
+}
+
+/* Card */
+.my-card {
+  background-color: #ffffff;
+  border: none;
+  transition: all 0.5s;
+  /* box-shadow: 2px 2px 5px #ffffff, -2px -2px 10px #00000070; */
+}
+.my-card:hover {
+  box-shadow: -5px -5px 15px #ffffff, 5px 5px 20px #00000070;
+}
+
+.trending-card {
+  /* background-color: #f9fafb; */
+  border: none;
+  transition: all 0.5s;
+  /* box-shadow: -1px -1px 10px #ffffff, 1px 1px 15px #00000070; */
+}
+
+/* Dashboard */
+.my-profile-card {
+  border: none;
+}
+.profile-card-header {
+  border: none;
+}
+
+/* Categories */
+.categories-main {
+}
+
+.categories {
+  position: relative;
+  border-radius: 10px;
+}
+
+.categories > div > img {
+  border-radius: 10px;
+}
+.categories > div:hover {
+  transition: all 0.5s;
+}
+.categories > div:hover {
+  opacity: 0.5;
+  zoom: 110%;
+}
+
+.categories-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Cart */
+.cart-totalbox {
+  font-family: "Inter", sans-serif;
+}
+/* Footer */
+footer {
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+/* About us */
+.about-jumbo {
+  /* background-color: #f4511e; */
+  background-color: #b033fa;
+  color: #fff;
+  padding: 100px 20px;
+}
+.about-con {
+  padding: 50px 0px;
+}
+
+/* The heart of the matter */
+.testimonial-group > .row {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.testimonial-group > .row > .col-4 {
+  display: inline-block;
+}
+
+.btn-google {
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  box-shadow: 2px 2px 10px #ffffff, -2px -2px 10px #00000070;
+}

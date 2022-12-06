@@ -45,10 +45,20 @@ app.use("/api", paymentBRoutes);
 const port = process.env.PORT || 8000;
 
 // heroku step
+// if (process.env.NODE_ENV == "production") {
+//   app.use(express.static("../projfrontend/build"));
+//   const path = require("path");
+//   app.get("*", (req, res) => {
+//     res.sendFile(
+//       path.resolve(__dirname, "projfrontend", "build", "index.html")
+//     );
+//   });
+// }
+
 if (process.env.NODE_ENV == "production") {
-  app.use(express.static("../projfrontend/build"));
   const path = require("path");
-  app.get("*", (req, res) => {
+  app.get("/", (req, res) => {
+    app.use(express.static(path.resolve(__dirname, "projfrontend", "build")));
     res.sendFile(
       path.resolve(__dirname, "projfrontend", "build", "index.html")
     );
