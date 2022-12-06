@@ -1,4 +1,6 @@
-import { API } from "../../backend";
+// import { API } from "../../backend";
+
+const API = "https://embrand.vercel.app/api/";
 
 export const getProducts = () => {
   return fetch(`${API}/products`, { method: "GET" })
