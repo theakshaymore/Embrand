@@ -157,7 +157,7 @@ const Menu = ({ history }) => (
                   trigger="loop"
                   colors="primary:#000000,secondary:#000000"
                 ></lord-icon> */}
-                Login/Register
+                Signin
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                 {!isAutheticated() && (
