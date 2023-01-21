@@ -140,7 +140,7 @@ const Menu = ({ history }) => (
 
           {/* Join/Register */}
           {!isAutheticated() && (
-            <li className="nav-item dropdown">
+            <li className="nav-item">
               <a
                 className="nav-link text-white btn nav-btn"
                 href="#"
@@ -157,32 +157,38 @@ const Menu = ({ history }) => (
                   trigger="loop"
                   colors="primary:#000000,secondary:#000000"
                 ></lord-icon> */}
-                Signin
-              </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                {!isAutheticated() && (
-                  <Fragment>
-                    <li className="dropdown-item text-dark">
-                      <Link
-                        style={currentTab(history, "/signup")}
-                        className="nav-link"
-                        to="/signup"
-                      >
-                        Register
-                      </Link>
-                    </li>
-                    <li className="dropdown-item text-dark">
-                      <Link
-                        style={currentTab(history, "/signin")}
-                        className="nav-link"
-                        to="/signin"
-                      >
+                <Link
+                     style={currentTab(history, "/signin")}
+                     to="/signin"
+                    >
                         Login
                       </Link>
-                    </li>
-                  </Fragment>
-                )}
-              </div>
+                Signin
+              </a>
+//               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+//                 {!isAutheticated() && (
+//                   <Fragment>
+//                     <li className="dropdown-item text-dark">
+//                       <Link
+//                         style={currentTab(history, "/signup")}
+//                         className="nav-link"
+//                         to="/signup"
+//                       >
+//                         Register
+//                       </Link>
+//                     </li>
+//                     <li className="dropdown-item text-dark">
+//                       <Link
+//                         style={currentTab(history, "/signin")}
+//                         className="nav-link"
+//                         to="/signin"
+//                       >
+//                         Login
+//                       </Link>
+//                     </li>
+//                   </Fragment>
+//                 )}
+//               </div>
             </li>
           )}
         </ul>
