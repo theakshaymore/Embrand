@@ -141,7 +141,7 @@ const Menu = ({ history }) => (
           {/* Join/Register */}
           {!isAutheticated() && (
             <li className="nav-item btn btn-danger">
-              <a
+              {/* <a
                 className="nav-link text-white btn nav-btn"
                 href="#"
                 id="navbarDropdown"
@@ -149,18 +149,17 @@ const Menu = ({ history }) => (
                 data-bs-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
+              > */}
+              <Link
+                style={currentTab(history, "/signin")}
+                className="nav-link"
+                to="/signin"
               >
-                <i class="fas fa-sign-in-alt me-2"></i>
-                {/* <lord-icon
-                  className="lordiicon"
-                  src="https://cdn.lordicon.com/dxjqoygy.json"
-                  trigger="loop"
-                  colors="primary:#000000,secondary:#000000"
-                ></lord-icon> */}
                 Signin
-              </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                {!isAutheticated() && (
+              </Link>
+              {/* </a> */}
+              {/* <div className="dropdown-menu" aria-labelledby="navbarDropdown"> */}
+              {/* {!isAutheticated() && (
                   <Fragment>
                     <li className="dropdown-item text-dark">
                       <Link
@@ -181,8 +180,8 @@ const Menu = ({ history }) => (
                       </Link>
                     </li>
                   </Fragment>
-                )}
-              </div>
+                )} */}
+              {/* </div> */}
             </li>
           )}
         </ul>
