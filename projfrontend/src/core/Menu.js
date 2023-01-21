@@ -140,16 +140,16 @@ const Menu = ({ history }) => (
 
           {/* Join/Register */}
           {!isAutheticated() && (
-            <li className="nav-item">
-              <a
-                className="nav-link text-white btn nav-btn"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
+            <li className="nav-item btn btn-danger">
+//               <a
+//                 className="nav-link text-white btn nav-btn"
+//                 href="#"
+//                 id="navbarDropdown"
+//                 role="button"
+//                 data-bs-toggle="dropdown"
+//                 aria-haspopup="true"
+//                 aria-expanded="false"
+//               >
                 <i class="fas fa-sign-in-alt me-2"></i>
                 {/* <lord-icon
                   className="lordiicon"
@@ -164,7 +164,7 @@ const Menu = ({ history }) => (
                         Login
                       </Link>
                 Signin
-              </a>
+//               </a>
 //               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
 //                 {!isAutheticated() && (
 //                   <Fragment>
